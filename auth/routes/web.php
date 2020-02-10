@@ -40,7 +40,7 @@ Route::get('/test' , function(){
 Route::group(['middleware' => 'userlogin'],function(){
 	Route::get('/test' ,function(){
 	return view('login'); 
-	}); 	                               //middleware for group
+	}); 	                               //middleware for group of routes 
 });
 
 
